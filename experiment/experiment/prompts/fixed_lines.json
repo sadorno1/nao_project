@@ -1,0 +1,10 @@
+{
+  "_comment": "Fixed participant-facing lines. look is used in this exact order for every participant.",
+  "greeting": "Hi, I'm Nao. I'm going to describe a Lego build to you one step at a time. Hold the top of my head while you talk to me, and let go when you're done. When you want me to check your build, press my foot.",
+  "look": [
+    "Okay, let me take a look.",
+    "Let me check that.",
+    "One moment, I'm looking now."
+  ],
+  "goodbye": "That matches. Nice work, we're all done."
+}

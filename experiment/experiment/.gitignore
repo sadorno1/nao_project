@@ -1,0 +1,7 @@
+# participant data, cached audio and scratch files never go into git
+data/
+audio_cache/
+tmp/
+test_photos/**/*.jpg
+test_photos/**/*.jpeg
+test_photos/**/*.png

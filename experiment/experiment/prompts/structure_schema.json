@@ -1,0 +1,57 @@
+{
+  "name": "lego_build",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["blocks", "notes"],
+    "properties": {
+      "blocks": {
+        "type": "array",
+        "description": "Every block in the photo, one entry per block, including blocks you can only infer.",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["color", "type", "orientation", "x", "y", "layer", "visibility"],
+          "properties": {
+            "color": {
+              "type": "string",
+              "enum": ["red", "blue", "yellow", "green", "white", "orange", "black", "unknown"],
+              "description": "Block color. Use unknown if you cannot see it."
+            },
+            "type": {
+              "type": "string",
+              "enum": ["2x2", "2x4", "unknown"],
+              "description": "Footprint in studs. Use unknown if you cannot tell."
+            },
+            "orientation": {
+              "type": ["integer", "null"],
+              "description": "0 = long side runs left to right as seen from the camera, 90 = long side runs front to back. Always 0 for 2x2. null if you cannot tell."
+            },
+            "x": {
+              "type": ["integer", "null"],
+              "description": "Stud column of the block's leftmost studs as seen from the camera. 0 = leftmost stud column of the bottom layer. null if you cannot tell."
+            },
+            "y": {
+              "type": ["integer", "null"],
+              "description": "Stud row of the block's front studs (nearest the camera). 0 = front row of the bottom layer. Increases away from the camera. null if you cannot tell."
+            },
+            "layer": {
+              "type": "integer",
+              "description": "0 = resting on the table or baseplate, 1 = on top of layer 0, and so on."
+            },
+            "visibility": {
+              "type": "string",
+              "enum": ["visible", "partial", "not_visible"],
+              "description": "visible = clearly seen; partial = partly hidden but position is clear; not_visible = hidden or unclear: its existence is inferred, do not guess its attributes (use unknown / null)."
+            }
+          }
+        }
+      },
+      "notes": {
+        "type": "string",
+        "description": "One short sentence about anything that made the photo hard to read (occlusion, glare, blur). Empty string if nothing."
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "blocks": [
+    {"id": "blue_base", "color": "blue", "type": "2x2", "orientation": 0, "x": 0, "y": 0, "layer": 0, "front_visible": true},
+    {"id": "red_base", "color": "red", "type": "2x4", "orientation": 0, "x": 2, "y": 0, "layer": 0, "front_visible": true},
+    {"id": "yellow_top", "color": "yellow", "type": "2x2", "orientation": 0, "x": 4, "y": 0, "layer": 1, "front_visible": true}
+  ]
+}
