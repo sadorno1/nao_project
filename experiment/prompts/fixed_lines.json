@@ -1,0 +1,10 @@
+{
+  "_comment": "Fixed participant-facing lines. Replace every TODO before a real session. look is used in this exact order for every participant (check 1 -> look[0], check 2 -> look[1], check 3 -> look[2], check 4 -> look[0], ...).",
+  "greeting": "TODO greeting line",
+  "look": [
+    "TODO take a look line 1",
+    "TODO take a look line 2",
+    "TODO take a look line 3"
+  ],
+  "goodbye": "TODO goodbye line"
+}

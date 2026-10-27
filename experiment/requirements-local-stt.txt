@@ -1,0 +1,4 @@
+# optional: only needed when TRANSCRIBE_BACKEND = "faster-whisper" in config.py
+# install into the same environment AFTER requirements.txt and check that pip did not change the
+# pinned numpy version (pip install --dry-run first); this compatibility has not been verified
+faster-whisper>=1.0

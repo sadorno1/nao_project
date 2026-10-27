@@ -1,0 +1,6 @@
+TODO: Describe the target structure here in plain language, layer by layer, from the participant's point of view.
+Use the same blocks as target_structure.json so the spoken steps and the camera check agree.
+Note that target_structure.json is in the CAMERA's frame; if the participant sits across from the robot, their left is the robot's right.
+Example (placeholder, matches the placeholder target_structure.json, replace both):
+Layer 1 (on the table): a red 2x4 block lying sideways, and a blue 2x4 block lying sideways right next to it, touching it end to end.
+Layer 2: a yellow 2x2 block on top of the red block, on the half of the red block that is closest to the blue block.

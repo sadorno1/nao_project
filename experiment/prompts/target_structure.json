@@ -1,0 +1,8 @@
+{
+  "_comment": "TODO: placeholder target. Coordinates use the same convention as structure_schema.json, in the CAMERA's frame (x = left to right as the robot sees it, y = front (nearest robot) to back, layer 0 = on the table). (x, y) is the block's stud with the smallest x and smallest y. orientation 0 = long side along x, 90 = long side along y; 2x2 is always 0. front_visible = false for blocks the camera cannot see in the finished build: they are reported but not required for a full match.",
+  "blocks": [
+    {"id": "b1", "color": "red",    "type": "2x4", "orientation": 0, "x": 0, "y": 0, "layer": 0, "front_visible": true},
+    {"id": "b2", "color": "blue",   "type": "2x4", "orientation": 0, "x": 4, "y": 0, "layer": 0, "front_visible": true},
+    {"id": "b3", "color": "yellow", "type": "2x2", "orientation": 0, "x": 2, "y": 0, "layer": 1, "front_visible": true}
+  ]
+}

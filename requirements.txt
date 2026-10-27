@@ -3,3 +3,7 @@ numpy==2.5.2
 pycparser==3.0
 qi==3.1.5
 sounddevice==0.5.6
+openai>=1.40
+paramiko>=2.8
+python-dotenv>=0.21
+Pillow>=10.0
