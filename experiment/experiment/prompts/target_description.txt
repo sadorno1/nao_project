@@ -1,0 +1,5 @@
+The structure has three blocks and two layers.
+
+Layer 1 (bottom): A red 2x4 block lies flat on the build spot with its long side running left to right. Directly to the right of it, touching its short end, sits a blue 2x2 block.
+
+Layer 2 (top): A yellow 2x2 block sits on top of the red block, over its left end, so it covers the two left studs columns of the red block.
